@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Perfumes - Discover Your Signature Scent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="image/Logo.png" alt="The Nose - Premium Perfume Store Logo" class="logo-image" style="height: 70px;">
+                </a>
+            </div>
+            
+            <!-- Nav Links -->
+            <ul class="nav-links">
+                <li><a href="Home.html" class="active" data-page="home">Home</a></li>  
+                <li><a href="Shop.html" data-page="shop">Shop</a></li>
+                <li><a href="Brand.html" data-page="brand">Brand</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <!-- Search and Icons -->
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input" aria-label="Search products">
+                </div>
+                <div class="icons">
+                    <a href="Register.html" title="Login / Register" aria-label="Login or Register account">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                    </a>
+                    <div class="cart-icon" role="button" tabindex="0" aria-label="Shopping cart with 0 items" aria-expanded="false">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="cartBadge" aria-live="polite">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle (Hamburger) -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your<br>Signature<br>Scent</h1>
+            <p>Premium fragrances for the modern man and woman. Explore our curated collection of authentic perfumes from world-renowned brands.</p>
+            <button class="btn" onclick="window.location.href='Shop.html'">SHOP NOW</button>
+        </div>
+
+        <div class="hero-video">
+            <video autoplay muted loop playsinline controls>
+                <source src="image/Hero_vid.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </section>
+
+    <!-- Category Grid -->
+    <section class="category-grid">
+        <div class="category-card" data-category="men" onclick="window.location.href='Shop.html?category=men'">
+            <img src="image/Men.png" alt="Men's Fragrances collection" class="category-bg-image">
+            <div class="category-overlay">
+                <h3>Men</h3>
+            </div>
+        </div>
+        <div class="category-card" data-category="women" onclick="window.location.href='Shop.html?category=women'">
+            <img src="image/Women.png" alt="Women's Fragrances collection" class="category-bg-image">
+            <div class="category-overlay">
+                <h3>Women</h3>
+            </div>
+        </div>
+        <div class="category-card" data-category="vintage" onclick="window.location.href='Shop.html?category=vintage'">
+            <img src="image/Vintage.png" alt="Vintage and Rare Perfumes collection" class="category-bg-image">
+            <div class="category-overlay">
+                <h3>Vintage & Rare Perfumes</h3>
+            </div>
+        </div>
+        <div class="category-card" data-category="brands" onclick="window.location.href='Shop.html?category=brands'">
+            <img src="image/brands.png" alt="All Brand Fragrances collection" class="category-bg-image">
+            <div class="category-overlay">
+                <h3>Brands</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Tom Ford Fucking Fabulous Parfum.png" alt="Tom Ford Fucking Fabulous Parfum luxury fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Tom Ford Fucking Fabulous Parfum</h4>
+                    <p class="price" data-price="8200">₱8,200</p>
+                    <button class="add-to-cart-btn" aria-label="Add Tom Ford Fucking Fabulous Parfum to cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Kayali Fleur Majesty Rose Royale.png" alt="Kayali Fleur Majesty Rose Royale fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Kayali Fleur Majesty Rose Royale</h4>
+                    <p class="price" data-price="7100">₱7,100</p>
+                    <button class="add-to-cart-btn" aria-label="Add Kayali Fleur Majesty Rose Royale to cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Phlur Golden Rule.png" alt="Phlur Golden Rule premium fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Phlur Golden Rule</h4>
+                    <p class="price" data-price="9500">₱9,500</p>
+                    <button class="add-to-cart-btn" aria-label="Add Phlur Golden Rule to cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="products-section">
+        <h2>Popular Products</h2>
+        <div class="products-grid four-col">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Maison Francis Kurkdjian Baccarat Rouge 540.png" alt="Maison Francis Kurkdjian Baccarat Rouge 540 luxury fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Maison Francis Kurkdjian Baccarat Rouge 540</h4>
+                    <p class="price" data-price="5790">₱5,790</p>
+                    <button class="add-to-cart-btn" aria-label="Add Maison Francis Kurkdjian Baccarat Rouge 540 to cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Tom Ford Bois Pacifique.png" alt="Tom Ford Bois Pacifique exclusive fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Tom Ford Bois Pacifique</h4>
+                    <p class="price" data-price="19500">₱19,500</p>
+                    <button class="add-to-cart-btn" aria-label="Add Tom Ford Bois Pacifique to cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Chanel No. 5.png" alt="Chanel No. 5 iconic fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Chanel No. 5</h4>
+                    <p class="price" data-price="13999">₱13,999</p>
+                    <button class="add-to-cart-btn" aria-label="Add Chanel No. 5 to cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/Chanel Coco Mademoiselle.png" alt="Chanel Coco Mademoiselle luxury fragrance" class="product-img" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Chanel Coco Mademoiselle</h4>
+                    <p class="price" data-price="13999">₱13,999</p>
+                    <button class="add-to-cart-btn" aria-label="Add Chanel Coco Mademoiselle to cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Since 2015, The Nose has offered one of the most carefully curated selections of 100% authentic brand name fragrances online. We specialize in both contemporary and rare/vintage perfumes, carrying over 800 premium brands that we ship across the Philippines, Asia, and worldwide! Our mission is to provide every customer a personalized, educational, and memorable experience offering not only original luxury brand name products but also exceptional customer service. Whether you're discovering your first signature scent or hunting for that elusive vintage bottle, our team of passionate fragrance specialists is here to guide your journey with expert recommendations and our authenticity guarantee.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p>"Absolutely love the collection! The quality is exceptional and the customer service is outstanding. Found my perfect signature scent here."</p>
+                <p class="reviewer">- Sarah M.</p>
+                <div class="stars" aria-label="5 stars out of 5">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <p>"Best perfume shopping experience ever. The staff really knows their fragrances and helped me find exactly what I was looking for."</p>
+                <p class="reviewer">- John D.</p>
+                <div class="stars" aria-label="5 stars out of 5">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <p>"Authentic products, great prices, and fast shipping. I've been a loyal customer for over a year now. Highly recommended!"</p>
+                <p class="reviewer">- Maria L.</p>
+                <div class="stars" aria-label="5 stars out of 5">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <p>"The variety of brands is incredible. I always find unique scents that I can't get anywhere else. Will definitely keep coming back."</p>
+                <p class="reviewer">- David K.</p>
+                <div class="stars" aria-label="5 stars out of 5">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cartOverlay" role="presentation"></div>
+    <div id="cartSidebar" role="dialog" aria-labelledby="cartTitle" aria-modal="true" hidden>
+        <div class="cart-header">
+            <h2 id="cartTitle">Shopping Cart</h2>
+            <button class="close-cart" aria-label="Close shopping cart"><i class="fas fa-times" aria-hidden="true"></i></button>
+        </div>
+        
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total-section">
+                <label for="cartTotal">Total:</label>
+                <span id="cartTotal">₱0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Top Bar -->
+        <div class="footer-top">
+            <div>
+                <h4>Free Shipping Within Philippines</h4>
+                <p>for orders over ₱3,000</p>
+            </div>
+            <div>
+                <h4>100% Authentic & Secure</h4>
+                <p>building trust and confidence</p>
+            </div>
+            <div>
+                <h4>Free Shipping to Asia</h4>
+                <p>for larger orders over ₱5,000</p>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="footer-col contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +63-917-123-4567</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@thenose.ph">info@thenose.ph</a></p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Makati Avenue, Makati City<br>Metro Manila 1200, Philippines</p>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About The Nose</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Get the latest updates, exclusive offers, and new arrivals straight to your inbox.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Nose Perfume Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts - Load only once at the end -->
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

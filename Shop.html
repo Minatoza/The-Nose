@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nose - Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="image/Logo.png" alt="The Nose" class="logo-image" style="height: 70px;">
+                </a>
+            </div>
+            
+            <!-- Nav Links -->
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html" class="active">Shop</a></li>
+                <li><a href="Brand.html">Brand</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            
+        <!-- Search and Icons -->
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." class="search-input">
+            </div>
+            <div class="icons">
+                <a href="Register.html" title="Login / Register">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartBadge">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Toggle (Hamburger) -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="shop-container">
+
+            <!-- Sidebar -->
+            <aside class="categories-sidebar">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="category-link">Men</a></li>
+                    <li><a href="#" class="category-link">Women</a></li>
+                    <li><a href="#" class="category-link">Vintage & Rare Perfumes</a></li>
+                    <li><a href="#" class="category-link">Brand</a></li>
+                </ul>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="products-grid four-col">
+
+                <!-- Row 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Dior Sauvage Elixir.png" alt="Dior Sauvage Elixir" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Dior Sauvage Elixir</h4>
+                        <p class="price">₱20,500</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Tom Ford Bois Pacifique.png" alt="Tom Ford Bois Pacifique" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Tom Ford Bois Pacifique</h4>
+                        <p class="price">₱19,500</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Creed Aventus.png" alt="Creed Aventus" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Creed Aventus</h4>
+                        <p class="price">₱10,500</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Bleu de Chanel Parfum.png" alt="Bleu de Chanel Parfum" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Bleu de Chanel Parfum</h4>
+                        <p class="price">₱9,500</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Maison Francis Kurkdjian Baccarat Rouge 540.png" alt="Maison Francis Kurkdjian Baccarat Rouge 540" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Maison Francis Kurkdjian Baccarat Rouge 540</h4>
+                        <p class="price">₱5,790</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Chanel Coco Mademoiselle.png" alt="Chanel Coco Mademoiselle" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Chanel Coco Mademoiselle</h4>
+                        <p class="price">₱13,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Dior J'adore.png" alt="Dior J'adore" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Dior J'adore</h4>
+                        <p class="price">₱7,800</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Parfums de Marly Delina.png" alt="Parfums de Marly Delina" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Parfums de Marly Delina</h4>
+                        <p class="price">₱15,390</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Dior Fahrenheit Absolute.png" alt="Dior Fahrenheit Absolute" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Dior Fahrenheit Absolute</h4>
+                        <p class="price">₱7,300</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Chanel Antaeus.png" alt="Chanel Antaeus" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Chanel Antaeus</h4>
+                        <p class="price">₱9,000</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Thierry Mugler Alien Essence Absolue.png" alt="Thierry Mugler Alien Essence Absolue" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Thierry Mugler Alien Essence Absolue</h4>
+                        <p class="price">₱6,700</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/Gucci Eau de Parfum II.png" alt="Gucci Eau de Parfum II" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Gucci Eau de Parfum II</h4>
+                        <p class="price">₱6,200</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+     <div id="cartOverlay"></div>
+    <div id="cartSidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart">✕</button>
+        </div>
+        
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total-section">
+                <label>Total:</label>
+                <span id="cartTotal">₱0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Top Bar -->
+        <div class="footer-top">
+            <div>
+                <h4>Free Shipping Within Philippines</h4>
+                <p>for orders over ₱3,000</p>
+            </div>
+            <div>
+                <h4>100% Authentic & Secure</h4>
+                <p>building trust and confidence</p>
+            </div>
+            <div>
+                <h4>Free Shipping to Asia</h4>
+                <p>for larger orders over ₱5,000</p>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="footer-col contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +63-917-123-4567</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@thenose.ph">info@thenose.ph</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Makati Avenue, Makati City<br>Metro Manila 1200, Philippines</p>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About The Nose</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Get the latest updates, exclusive offers, and new arrivals straight to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 The Nose Perfume Store. All rights reserved. E-commerce powered by Shopify</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
